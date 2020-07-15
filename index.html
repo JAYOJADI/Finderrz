@@ -111,7 +111,7 @@
             
             <!-- <form action="http://localhost:8000" method="post"> -->
             <!-- <form action="https://desolate-river-02853.herokuapp.com/" method="post"> -->
-            <form action="https://piscine-chaise-11299.herokuapp.com/" method="post">
+            <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Subscribe and get notified when we launch</label>
                     <input type="email" name="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
@@ -122,6 +122,35 @@
             
        </div>
        
-   </div> 
+   </div>
+   <script>
+    const mail = document.querySelector('input');
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      var formData = new FormData(form);
+      formData.append('name', mail.value);
+      fetch('https://piscine-chaise-11299.herokuapp.com/', {
+        method: 'POST',
+        body: formData,
+      })
+        .then(function (response) {
+          return response.text();
+        })
+        .then(function (body) {
+          if (body === 'success') {
+            //do your thing here like alert
+            alert('success');
+          } else {
+            //its not successful. do your thing here like alert
+            alert(body);
+          }
+        })
+        .catch((el) => {
+            //if theres error. do your thing here like alert also
+          alert(el);
+        });
+    });
+  </script> 
 </body>
 </html>
