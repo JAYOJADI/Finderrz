@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel ="stylesheet" type="text/css" href="style/css">  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+     
+    <style type = "text/css">
+        .form-control{
+            border-radius:.85rem;
+            
+        }
+
+        h3{
+            font-size: bold;
+            font-weight: 32px;
+            margin-bottom: 30px;
+        }
+
+        label{
+            font-weight: bold;
+            font-size:15px;
+            
+        }
+        .form-control{
+            width:60%;
+            border-radius: 0%;
+        }
+        .btn{
+            background-color: #6B3FEC;
+            color:white;
+            margin-left: 5px;
+        }
+
+        p{
+            margin-bottom:20px;
+        }
+
+        .rows{
+           background-image: url(images/rext.png);
+           height:200px;
+           background-repeat: no-repeat;
+           background-position: center center;
+           background-size: cover;
+       } 
+
+       .floats{
+           float:left;
+           margin-left:58%;
+           padding-top:5%;
+           
+           
+       } 
+       .fab{
+           color:white;
+       }
+
+       .with{
+           height:40px;
+       }
+
+       .floated{
+           float:right;
+       }
+
+       @media only screen and (max-width:667px){
+               .rows{
+                   /* background-position-x: center; */
+                   margin-left:0;
+               }
+
+               .floats{
+                   margin-left: 0;
+               }
+
+               div{
+                   margin-left:3px;
+               }
+       }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row rows"> 
+            <img  class="with" src="images/Vector (24).png">
+            <img class="with ml-3" src="images/Finderz.png">
+            <div class="floats">
+            <a href="#" ><i class="fab fa-facebook mr-4"></i></a>
+            <a href="#" ><i class="fab fa-twitter mr-4"></i></a>
+            <a href="#" ><i class="fab fa-instagram mr-4"></i></a>
+        </div>
+        
+        </div>
+    </div>
+      
+   <div class="container">
+       <div class="row">
+            <div class="col-lg-4">
+                <img src="images/drawkit-grape-pack-illustration-13.png">
+            </div>
+            <div class="col-lg-6">
+                <h3>It can be difficult to find people in<br>
+                 a crowd, whether you're looking<br>
+                  for a lost child, family or friend</h3>
+                <p>With Finderz, you can easily soon, search for people <br>using descriptives features such as height, gender,<br> clothing.</p>
+            
+            <!-- <form action="http://localhost:8000" method="post"> -->
+            <!-- <form action="https://desolate-river-02853.herokuapp.com/" method="post"> -->
+            <form action="https://piscine-chaise-11299.herokuapp.com/" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Subscribe and get notified when we launch</label>
+                    <input type="email" name="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                      <button type="submit" class="btn">Notify me</buttton>
+                </div>
+            </form>
+            <div><img  class="floated" src="images/Vector (26).png"></div>
+            
+       </div>
+       
+   </div> 
+</body>
+</html>
