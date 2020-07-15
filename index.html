@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Finderz Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- <link rel ="stylesheet" type="text/css" href="style/css">  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
@@ -123,7 +124,9 @@
        </div>
        
    </div>
+   <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
    <script>
+    var notyf = new Notyf({ duration: 4000 });
     const mail = document.querySelector('input');
     const form = document.querySelector('form');
     form.addEventListener('submit', (e) => {
@@ -138,18 +141,15 @@
           return response.text();
         })
         .then(function (body) {
-          if (body === 'success') {
-            //do your thing here like alert
-            alert('success');
-          } else {
-            //its not successful. do your thing here like alert
-            alert(body);
-          }
-        })
-        .catch((el) => {
-            //if theres error. do your thing here like alert also
-          alert(el);
-        });
+            if (body === 'success') {
+              notyf.success('An email was sent to you. Check your inbox!');
+            } else {
+              notyf.error('Something went wrong. Please try again');
+            }
+          })
+          .catch((el) => {
+            notyf.error('Something went wrong. Please try again');
+          });
     });
   </script> 
 </body>
