@@ -215,6 +215,18 @@
       e.preventDefault();
       var formData = new FormData(form);
       formData.append('name', mail.value);
+      new Notyf({
+          types: [
+            {
+              type: 'info',
+              background: 'green',
+              icon: false,
+            },
+          ],
+        }).open({
+          type: 'info',
+          message: 'Sending E-mail',
+        });
       fetch('https://piscine-chaise-11299.herokuapp.com/', {
         method: 'POST',
         body: formData,
