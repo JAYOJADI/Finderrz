@@ -1,129 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finderz Landing Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <link rel ="stylesheet" type="text/css" href="style/css">  -->
+	<title>Finderz</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-     
-    <style type = "text/css">
-        .form-control{
-            border-radius:.85rem;
-            
-        }
+    
 
-        h3{
-            font-size: bold;
-            font-weight: 32px;
-            margin-bottom: 30px;
-        }
 
-        label{
-            font-weight: bold;
-            font-size:15px;
-            
-        }
-        .form-control{
-            width:60%;
-            border-radius: 0%;
-        }
-        .btn{
-            background-color: #6B3FEC;
-            color:white;
-            margin-left: 5px;
-        }
-
-        p{
-            margin-bottom:20px;
-        }
-
-        .rows{
-           background-image: url(images/rext.png);
-           height:200px;
-           background-repeat: no-repeat;
-           background-position: center center;
-           background-size: cover;
-       } 
-
-       .floats{
-           float:left;
-           margin-left:58%;
-           padding-top:5%;
-           
-           
-       } 
-       .fab{
-           color:white;
-       }
-
-       .with{
-           height:40px;
-       }
-
-       .floated{
-           float:right;
-       }
-
-       @media only screen and (max-width:667px){
-               .rows{
-                   /* background-position-x: center; */
-                   margin-left:0;
-               }
-
-               .floats{
-                   margin-left: 0;
-               }
-
-               div{
-                   margin-left:3px;
-               }
-       }
-
-        
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row rows"> 
-            <img  class="with" src="images/Vector (24).png">
-            <img class="with ml-3" src="images/Finderz.png">
-            <div class="floats">
-            <a href="#" ><i class="fab fa-facebook mr-4"></i></a>
-            <a href="#" ><i class="fab fa-twitter mr-4"></i></a>
-            <a href="#" ><i class="fab fa-instagram mr-4"></i></a>
-        </div>
+    <section id="backgrounds" class="layer">
         
-        </div>
-    </div>
-      
-   <div class="container">
-       <div class="row">
-            <div class="col-lg-4">
-                <img src="images/drawkit-grape-pack-illustration-13.png">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dream">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="img/logo1.png"> <img src="img/header1.png"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto"> 
+                <!-- <li class="nav-item">
+                      <a class="nav-link" href="#"><span id="two">HOME</span> <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                
+            </ul>
             </div>
-            <div class="col-lg-6">
-                <h3>It can be difficult to find people in<br>
-                 a crowd, whether you're looking<br>
-                  for a lost child, family or friend</h3>
-                <p>With Finderz, you can easily soon, search for people <br>using descriptives features such as height, gender,<br> clothing.</p>
-            
-            <!-- <form action="http://localhost:8000" method="post"> -->
-            <!-- <form action="https://desolate-river-02853.herokuapp.com/" method="post"> -->
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Subscribe and get notified when we launch</label>
-                    <input type="email" name="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
-                      <button type="submit" class="btn">Notify me</buttton>
-                </div>
-            </form>
-            <div><img  class="floated" src="images/Vector (26).png"></div>
-            
-       </div>
-       
-   </div>
+            </div>
+        </nav>
+    </section>
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="#" class="head"><img src="img/logo1.png"></a>
+				<a href="#" class="head2"><img src="img/header1.png"></a>
+			</div>
+			<div class="col-md-9" style="text-align: left;">
+				<div class="overposit" id="zio">
+					<img src="img/rec.png" style="width: 100%; height: 100px;">
+					<div class="over" >
+						<img  class="mr-3" src="img/fb.png">
+						<img  class="mr-3" src="img/ig.png">
+						<img  class="mr-3" src="img/twitter.png">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-6">
+				<h1 class="title animate__animated animate__fadeInLeftBig">Introducing</h1>
+				<div class="like animate__animated animate__fadeInLeftBig"><img src="img/find.png"></div>
+				<p class="animate__animated animate__fadeInLeftBig">An app that  helps in locating a particular individual in a crowded place , based on the description inputed.</p>
+			</div>
+			<div class="col-md-6 pl-10" id="zio">
+				<img class="" width="300px" src="svg/frame1.svg">
+			</div>
+		</div>
+	</div>
+	<div class="container py-5 wow fadeInUp" data-wow-duration="1s">
+		<div class="row">
+			<div class="col-md-6" id="zio">
+				<img src="img/frame1.png">
+			</div>
+			<div class="col-md-6">
+				<h1 class="title1 mb-5" data-aos="fade-right">It can be difficult to find people in a crowd, whether you’re looking for a lost child, family or a friend. </h1>
+				<p data-aos="fade-right">With Finderz, you can easily scan, search for people using descriptives features such as  height, gender, clothing .</p>
+
+				<p class="mb-3" data-aos="fade-right">Subscribe and get notified when we launch</p>
+				<form>
+
+					<input type="" placeholder="Enter your email address" name="" class="form-control textbox mb-3">
+					<button class="btn btn-primary btn-lg">Notify me </button>
+				</form>
+			</div>
+			
+
+		</div>
+	</div>
+	<div class="body">
+		<div class="container py-5 wow fadeInUp">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="line mb-5">
+						<h1 class="title1" data-aos="fade-left">All information data are Highly secured & safe </h1>
+						<p data-aos="flip-left">An app that  helps in locating a particular individual in a crowded place , based on the description inputed.</p>
+					</div>
+					<div class="line2 mb-5" data-aos="fade-left">
+						<h1 class="title1" >Easy to use  with just the Device Camera.</h1>
+					</div>
+					<div class="line3 mb-5" data-aos="fade-left">
+						<h1 class="title1" >Precise and accurate, using GPS Trackers </h1>
+					</div>
+				</div>
+				<div class="col-md-6 pl-10" id="zio" data-aos="fade-left">
+					<img class="" width="300px" src="svg/frame2.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container py-5 py-5 wow fadeInUp">
+		<h1 class="title1 text-center pb-5" data-aos="flip-left">How does it work ?</h1>
+		<div class="row justify-content-end">
+			<div class=" col-md-4 mr-5">
+				<img src="svg/frame1.png" width="367" id="zio">
+			</div>
+			<div class="col-md-4 break">
+				<div> <img src="img/text.png" data-aos="flip-left"><h3 class="sign">Sign Up</h3></div>
+				<p data-aos="flip-right">Sign up and Login on Finderz</p>
+				<!-- <p data-aos="flip-right">consectetur vitae a a ornare elit lectus. Faucibus quis neque nec sed fermentum</p> -->
+			</div>
+			
+		</div>
+		<div class="col-md-4 breaks">
+			<div> <img src="img/text.png"  id="zio" data-aos="flip-right"><h3 class="sign">User Profile</h3></div>
+			<p data-aos="flip-right">Add descriptive features such as height, hair color etc. for <br>interested individual meant to be found.</p>
+			<!-- <p data-aos="flip-right">for interested individual meant to be found.</p> -->
+		</div>	
+
+	</div>
+	<div class="container py-5 py-5 wow fadeInUp">
+		<div class="row justify-content-end">
+			<div class=" col-md-4 mr-5" data-aos="zoom-in"  id="zio">
+				<img src="svg/frame2.png" width="367" id="zio">
+			
+			</div>
+			<div class="col-md-4 break">
+				<div> <img src="img/text.png"><h3 class="sign">Uploads</h3></div>
+				<p data-aos="zoom-in">FInderz has the ability to search for interested individuals using PNG,JPEGs format </p>
+				<!-- <p data-aos="zoom-in">consectetur vitae a a ornare elit lectus. Faucibus quis neque nec sed fermentum</p> -->
+			</div>
+			
+		</div>
+		<div class="col-md-4 breaks ">
+			<div> <img src="img/text.png" data-aos="zoo breakm-in"><h3 class="sign">Scan</h3></div>
+			<p data-aos="zoom-in">Finderz real time mapping system can search for interested individuals using your device camera.</p>
+			<!-- <p data-aos="zoom-in">consectetur vitae a a ornare elit lectus. Faucibus quis neque nec sed fermentum</p> -->
+		</div>	
+
+	</div><div class="container py-5 py-5 wow fadeInUp">
+		<div class="row justify-content-end">
+			<div class=" col-md-4 mr-5"  id="zio">
+				<img src="svg/frame3.png" width="367" id="zio">
+				
+			</div>
+			<div class="col-md-4" data-aos="zoom-in">
+				<div> <img src="img/text.png"><h3 class="sign">History</h3></div>
+				<p>Access all recent searched individuals with their location.</p>
+				<!-- <p>consectetur vitae a a ornare elit lectus. Faucibus quis neque nec sed fermentum</p> -->
+			</div>
+			
+		</div>
+		<div class="col-md-4 breaks ">
+			<div> <img src="img/text.png" data-aos="zoom-in"><h3 class="sign">Location</h3></div>
+			<p data-aos="zoom-in">Finderz uses accurate crowd analysis and dynamics thus providing 100% accuracy in locating interested individuals.</p>
+			<!-- <p data-aos="zoom-in">consectetur vitae a a ornare elit lectus. Faucibus quis neque nec sed fermentum</p> -->
+		</div>	
+	</div>
+	<div class="container call">
+		<div class="row">
+			<div class="col-md-12 col-sm-4 mx-auto" id="zio">
+				<img src="svg/gallery.svg"  data-aos="fade-up" style="width:100%;">
+				<img src="svg/gallery2.svg" class="mbs" data-aos="fade-down" style="width:100%; height:60%";>
+
+			</div>
+			
+		</div>
+	</div>
+	<div class="down">
+		<div class="container ">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="title1 my-5 pt-5">Coming soon!!! Available on. </h1>
+					<div class="mb-4"  id="zio">
+						<img src="img/apple.png">
+					</div>
+					<div class="mb-5 pb-5"  id="zio">
+						<img src="img/google.png">
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
+
    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
    <script>
     var notyf = new Notyf({ duration: 4000 });
@@ -152,5 +234,9 @@
           });
     });
   </script> 
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <sript type="text/javascript" src="styles.js"></sript>  
 </body>
 </html>
